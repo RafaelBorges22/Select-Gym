@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scroll.css">
+    <link rel="stylesheet" href="section.css">
+    <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="http://unpkg.com/swiper@7/swiper-bundle.min.css">
     <title>Select Gym |Itaim Paulista</title>
@@ -12,7 +14,7 @@
     <header>
         <a href="#" class="logo"><span>Select Gym</span></a>
         
-        <div class="fa fa-bars" id="btn-button"></div>
+        <div class="fa fa-bars" id="btn-menu"></div>
 
         <nav class="navbar">
             <a href="#home">Home</a>
@@ -24,14 +26,14 @@
     </header>
 
     <main>
-        <section id="home">
+        <section id="home" class="home">
             <div class="swiper home-slider">
                 <div class="swiper-wraper">
                     <div class="swiper-slide slide" style="background: url(./img-gym/training-828726_1280.jpg) no-repeat;">
                         <div class="content">
                             <span>Seja sua própria inspiração, seja select</span>
                             <h3>Torne-se forte</h3>
-                            <a href="#" class="btn"></a>
+                            <a href="#" class="btn">Botão</a>
                         </div>
 
                     </div>
@@ -40,7 +42,7 @@
                         <div class="content">
                             <span>Seja sua própria inspiração, seja select</span>
                             <h3>Torne-se forte</h3>
-                            <a href="#" class="btn"></a>
+                            <a href="#" class="btn">Botão</a>
                         </div>
 
                     </div>
@@ -49,7 +51,7 @@
                         <div class="content">
                             <span>Seja sua própria inspiração, seja select</span>
                             <h3>Torne-se forte</h3>
-                            <a href="#" class="btn"></a>
+                            <a href="#" class="btn">Botão</a>
                         </div>
 
                     </div>
@@ -58,7 +60,7 @@
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" class="about">
             <div class="image">
                 <img src="/img-gym/training-828726_1280.jpg" alt="">
             </div>
@@ -93,7 +95,7 @@
             </div>
         </section>
 
-        <h1>Conheça nossos planos</h1>
+        <h1 class="heading"><span>Conheça nossos planos</span></h1>
         <section class="Planos">
             <div class="box-container">
                 <div class="box">
@@ -144,6 +146,47 @@
             </div>
         </section>
 
+        <section class="treinadores">
+            <h1 class="heading"><span>Conheça nossos treinadores</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="/img-gym/training-828726_1280.jpg" alt="">
+                    <div class="content">
+                        <h3>Bruno</h3>
+                        <div class="share">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="/img-gym/training-828726_1280.jpg" alt="">
+                    <div class="content">
+                        <h3>Ricardo</h3>
+                        <div class="share">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="/img-gym/training-828726_1280.jpg" alt="">
+                    <div class="content">
+                        <h3>Fulano</h3>
+                        <div class="share">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 

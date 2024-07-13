@@ -1,0 +1,34 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    z-index: 1000;
+    background: black;
+}
+header .logo{
+    font-weight: bolder;
+    color: blue;
+    font-size: 3rem;
+}
+header .navbar a{
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+    color: white;
+}
+header .navbar a:hover{
+    color: blue;
+}
+
+/*menu-mobile*/
+#btn-menu{
+    font-size: 3rem;
+    color: blue;
+    cursor: pointer;
+    display: none;
+}
