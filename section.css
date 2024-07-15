@@ -1,10 +1,30 @@
 body{
     background-color: black;
 }
+.navbar-mobile{
+    background-color: rgba(0, 0, 0, 0.616);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    display: none;
+}
+.navbar-active{
+    display: block;
+}
+.navbar-mobile a{
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.navbar-mobile a:hover{
+    background-color: blue;
+    color: #fff;
+}
+
 section{
     padding: 5rem 9%;
 }
-
 .heading{
     text-align: center;
     margin-bottom: 3rem;
@@ -78,7 +98,7 @@ section{
     background: #fff;
     border-radius: 0;
 }
-.swiper-pagination-bullet.swiper-pagination-bullet-active{
+.swiper-pagination-bullet .swiper-pagination-bullet-active{
     background: blue;
 }
 
@@ -88,12 +108,12 @@ section{
     flex-wrap: wrap;
     gap: 8rem;
 }
-.about.image{
+.about .image{
     flex: 1 1 42rem;
     position: relative;
 }
-.about.image::before,
-.about.image::after{
+.about .image::before,
+.about .image::after{
     content: '';
     position: absolute;
     z-index: -1;
@@ -102,25 +122,150 @@ section{
     width: 15rem;
 }
 
-.about.image::before{
+.about .image::before{
     top: 0;
     left: 0;
 }
-.about.image::after{
+.about .image::after{
     top:0;
     right: 0;
 }
 
-.about.image img{
+.about .image img{
     width: 100%;
     padding: 2rem;
 }
-.about.content{
+.about .content{
     flex: 1 1 42rem;
 }
-
-
-
-
+.about .content span{
+    font-size: 1rem;
+    color: blue;
+}
+.title{
+    font-size: 4rem;
+    color: #fff;
+    margin-top: .5rem;
+}
+.title p{
+    font-size: 2rem;
+    color: #fff;
+    margin-top: .5rem;
+}
+.about .content p{
+    font-size: 1.5rem;
+    color: #aaa;
+    padding: 1rem 0;
+    line-height: 2;
+}
+.about .content span{
+    font-size: 3.5rem;
+}
+.about .content p{
+    font-size: 2rem;
+}
+.about .content .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.about .content .box-container .box{
+    flex: 1 1 20rem;
+}
+.about .content .box-container .box h3{
+    font-size: 2rem;
+    color: #aaa;
+}
+.about .content .box-container h3 i{
+    padding-right: 1.5rem;
+    color: blue;
+}
+.Planos .box-container .box{
+    background: black;
+    border-radius: 1.5rem;
+    box-shadow: blue 0px 0px 20px;
+    padding: 3rem;
+    margin-top: 5rem;
+}
+.Planos .box-container .box:hover .image img{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.Planos .box-container .box .image{
+    height: 45rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+.Planos .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.Planos .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+.Planos .box-container .box .content img{
+    height: 9rem;
+    margin-bottom: 1rem;
+    filter: invert(1);
+}
+.Planos .box-container .box .content h3{
+    font-size: 2rem;
+    color: blue;
+}
+.Planos .box-container .box .content p{
+    line-height: 2;
+    font-size: 1.5rem;
+    color: #aaa;
+    padding: 1rem 0;
+}
+.treinadores .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    gap: 1.5rem;
+}
+.treinadores .box-container .box{
+    height: 40rem;
+    overflow: hidden;
+    position: relative;
+}
+.treinadores .box-container .box:hover .content{
+    transform: translateY(0);
+}
+.treinadores .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.treinadores .box-container .box .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.582);
+    padding: 3rem;
+    transform: translateY(6.5rem);
+}
+.treinadores .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.treinadores .box-container .box .content .share{
+    display: flex;
+    justify-content: center;
+}
+.treinadores .box-container .box .content .share a i{
+    color: #fff;
+    font-size: 3rem;
+    padding: 0 1rem;
+}
+.treinadores .box-container .box .content .share a i:hover{
+    color: blue;
+}
 
 
