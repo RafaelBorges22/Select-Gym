@@ -18,17 +18,23 @@ header .logo{
 header .navbar a{
     display: inline-block;
     padding: 1.5rem 2rem;
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: white;
 }
 header .navbar a:hover{
     color: blue;
+    transition: .4s;
 }
-
-/*menu-mobile*/
-#btn-menu{
-    font-size: 3rem;
-    color: blue;
-    cursor: pointer;
+.dropdown{
     display: none;
+}
+.dropdown-menu{
+    display: none;
+}
+.dropdown-menu li a{
+    font-size: 2rem;
+}
+.dropdown-menu li a:hover{
+    background-color: blue;
+    color: #fff;
 }

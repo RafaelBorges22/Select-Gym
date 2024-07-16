@@ -20,10 +20,16 @@
     }
 }
 @media (max-width: 770px) {
-    .navbar-desktop{
+    .dropdown{
+        display: block;
+    }
+    #dropdownMenuButtonClose{
         display: none;
     }
-    .navbar-mobile{
+    .dropdown #closebtn{
+        display: none;
+    }
+    .navbar-desktop{
         display: none;
     }
     #btn-menu{
