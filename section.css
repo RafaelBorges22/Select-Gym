@@ -70,7 +70,7 @@ section{
 }
 .home{
     padding: 0;
-    margin-top: 5rem;
+    margin-top: 6rem;
 }
 
 .home .slide{
@@ -90,6 +90,9 @@ section{
     border-radius: 2rem;
     box-shadow: blue 0px 0px 20px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
 }
 .home .slide .content .btn{
     font-size: 2.7rem;
@@ -241,12 +244,15 @@ section{
 .treinadores .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
 }
 .treinadores .box-container .box{
     height: 40rem;
     overflow: hidden;
     position: relative;
+    box-shadow: blue 0px 0px 20px;
+    border-radius: 2rem;
+    margin: 2rem;
 }
 .treinadores .box-container .box:hover .content{
     transform: translateY(0);
@@ -285,5 +291,37 @@ section{
     color: blue;
     transition: .4s;
 }
+.contato{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+.contato .image{
+    flex: 1 1 42rem;
+    position: relative;
+}
+.contato .image::before,
+.contato .image::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: blue;
+    height: 15rem;
+    width: 15rem;
+}
 
+.contato .image::before{
+    top: 0;
+    left: 0;
+}
+.contato .image::after{
+    top:33rem;
+    right: 17rem;
+}
+
+.contato .image img{
+    width: 75%;
+    padding: 2rem;
+}
 
