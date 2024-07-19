@@ -99,4 +99,36 @@
     color: white;
     font-size: 2.5rem;
   }
-  
+  .contato{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+.contato .image{
+    flex: 1 1 42rem;
+    position: relative;
+}
+.contato .image::before,
+.contato .image::after{
+    content: '';
+    position:absolute;
+    z-index: -1;
+    background: blue;
+    height: 15rem;
+    width: 15rem;
+}
+
+.contato .image::before{
+    top: 0;
+    left: 0;
+}
+.contato .image::after{
+    top:33rem;
+    right: 17rem;
+}
+
+.contato .image img{
+    width: 75%;
+    padding: 2rem;
+}

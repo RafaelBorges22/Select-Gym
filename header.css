@@ -21,6 +21,15 @@ header .navbar a{
     font-size: 2rem;
     color: white;
 }
+header a{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem 1rem;
+}
+header a img{
+    height: 80px;
+    width: 80px;
+}
 header .navbar a:hover{
     color: blue;
     transition: .4s;
